@@ -130,7 +130,7 @@ SELECT * FROM producto WHERE codigo_fabricante = 2;
 SELECT * FROM producto WHERE precio = 
 (SELECT MAX(precio) FROM producto
 	WHERE codigo_fabricante = 2
-);
+); 
 
 -- 38. Llista el nom del producte més car del fabricant Lenovo.
 SELECT nombre FROM producto WHERE codigo_fabricante = 2 ORDER BY precio DESC limit 1;
